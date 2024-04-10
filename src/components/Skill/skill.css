@@ -1,0 +1,11 @@
+.skill-image {
+    height: 100px;
+    width: 80px;
+}
+
+.skill {
+    filter: grayscale(1);
+}
+.skill:hover {
+    filter: grayscale(0);
+}

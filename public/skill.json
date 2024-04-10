@@ -1,0 +1,79 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "HTML 5",
+    "icon": "/../src/assets/icons/html.png"
+  },
+  {
+    "skillId": 2,
+    "skillName": "CSS 3",
+    "icon": "/../src/assets/icons/css.png"
+  },
+  {
+    "skillId": 3,
+    "skillName": "JavaScript",
+    "icon": "/../src/assets/icons/javascript.png"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Tailwind",
+    "icon": "/../src/assets/icons/tailwind.png"
+  },
+  { "skillId": 4, "skillName": "Vue", "icon": "/../src/assets/icons/vue.png" },
+  {
+    "skillId": 5,
+    "skillName": "Nuxtjs",
+    "icon": "/../src/assets/icons/nuxtjs.png"
+  },
+  {
+    "skillId": 6,
+    "skillName": "React",
+    "icon": "/../src/assets/icons/react.png"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Redux",
+    "icon": "/../src/assets/icons/redux.png"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Nodejs",
+    "icon": "/../src/assets/icons/nodejs.png"
+  },
+  {
+    "skillId": 9,
+    "skillName": "Expressjs",
+    "icon": "/../src/assets/icons/express.png"
+  },
+  {
+    "skillId": 10,
+    "skillName": "Firebase",
+    "icon": "/../src/assets/icons/firebase.png"
+  },
+  {
+    "skillId": 11,
+    "skillName": "Graphql",
+    "icon": "/../src/assets/icons/graphql.png"
+  },
+  {
+    "skillId": 12,
+    "skillName": "Prisma",
+    "icon": "/../src/assets/icons/prisma.png"
+  },
+  {
+    "skillId": 13,
+    "skillName": "Redis",
+    "icon": "/../src/assets/icons/redis.png"
+  },
+  { "skillId": 14, "skillName": "Git", "icon": "/../src/assets/icons/git.png" },
+  {
+    "skillId": 15,
+    "skillName": "Netlify",
+    "icon": "/../src/assets/icons/netlify.png"
+  },
+  {
+    "skillId": 16,
+    "skillName": "Figma",
+    "icon": "/../src/assets/icons/figma.png"
+  }
+]

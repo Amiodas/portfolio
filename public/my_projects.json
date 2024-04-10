@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "category": "web_development",
+    "projectName": "Chef Squad",
+    "imageURL": "/../src/assets/project_1.png",
+    "link": "https://assignment-10-frontend.web.app/"
+  },
+  {
+    "id": 2,
+    "category": "web_development",
+    "projectName": "Marvel",
+    "imageURL": "/../src/assets/project_2.png",
+    "link": "https://assignment-11-client-3fe02.web.app/"
+  },
+  {
+    "id": 3,
+    "category": "web_development",
+    "projectName": "Chakri",
+    "imageURL": "/../src/assets/project_3.png",
+    "link": "https://funny-unicorn-6bb02e.netlify.app/"
+  },
+  {
+    "id": 4,
+    "category": "ui_design",
+    "projectName": "Money Management",
+    "imageURL": "/../src/assets/UI_1.png",
+    "link": "https://funny-unicorn-6bb02e.netlify.app/"
+  },
+  {
+    "id": 5,
+    "category": "ui_design",
+    "projectName": "Restaurant Website",
+    "imageURL": "/../src/assets/UI_2.png",
+    "link": "https://funny-unicorn-6bb02e.netlify.app/"
+  },
+  {
+    "id": 6,
+    "category": "ui_design",
+    "projectName": "Easy Booking",
+    "imageURL": "/../src/assets/UI_3.png",
+    "link": "https://funny-unicorn-6bb02e.netlify.app/"
+  },
+  {
+    "id": 7,
+    "category": "ui_design",
+    "projectName": "Paciyfy.gg",
+    "imageURL": "/../src/assets/UI_4.png",
+    "link": "https://funny-unicorn-6bb02e.netlify.app/"
+  }
+]

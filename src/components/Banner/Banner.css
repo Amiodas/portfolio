@@ -1,0 +1,67 @@
+.banner-background {
+  background: hsla(205, 46%, 10%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1 );
+}
+.banner-image {
+  z-index: 1;
+  border: 2px solid blue;
+  border-radius: 40px;
+  rotate: 8deg;
+  transition-duration: 0.8s;
+}
+.banner-image:hover {
+  animation-delay: 1s;
+  animation-duration: 1;
+  transform: rotate(-8deg);
+}
+
+.background-text {
+  font-size: 16vw;
+  /* font-family: "Rubik Doodle Shadow", system-ui; */
+  -webkit-text-stroke: 0.2vh blue;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 0;
+  position: absolute;
+  left: 42%;
+  top: 35%;
+  opacity: 0.3;
+  /* color: blue; */
+  animation-name: text-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    font-size: 240px;
+  }
+  50% {
+    font-size: 220px;
+  }
+  100% {
+    font-size: 240px;
+  }
+}
