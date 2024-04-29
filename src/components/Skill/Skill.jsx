@@ -16,7 +16,6 @@ const Skill = () => {
       .then((data) => setSkills(data));
   }, []);
 
-  console.log(skills);
   return (
     <div>
       <div className="container hero min-h-screen mx-auto">
@@ -27,7 +26,7 @@ const Skill = () => {
               {skills.map((skill) => (
                 <div
                   className="card skill border p-4 flex justify-center"
-                  key={skill.id}
+                  key={skill.skillName}
                 >
                   <div className="mx-auto">
                     <img

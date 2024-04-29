@@ -11,16 +11,16 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="banner-background">
+    <div className="banner-background pt-12">
       <div className="container min-h-screen mx-auto grid grid-cols-2">
         <div className="flex items-center">
           <div className="">
-            <h1 className="text-4xl font-bold text-teal-500 mb-5">I am Amio</h1>
-            <div className="text-6xl font-bold">
+            <h1 className="text-5xl font-bold mb-5">I am Amio</h1>
+            <div className="text-7xl font-bold gradient-text">
               <p className="mb-5">Web Developer +</p>
               <p className="">UX Designer</p>
             </div>
-            <p className="py-6 text-xl">
+            <p className="py-6 text-2xl">
               I break down complex user experinece problems to create integritiy
               focussed solutions that connect billions of people
             </p>

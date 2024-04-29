@@ -5,7 +5,7 @@ import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto  bg-base-100 font-bold flex justify-between py-5">
+    <div className="container navbar-background mx-auto font-bold flex items-center justify-between py-5">
       <div className="">
         <a className="text-xl">amio.das.dip@gmail.com</a>
       </div>

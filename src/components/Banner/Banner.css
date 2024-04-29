@@ -1,52 +1,40 @@
 .banner-background {
-  background: hsla(205, 46%, 10%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(205, 46%, 10%, 1) 0%,
-    hsla(191, 28%, 23%, 1) 50%,
-    hsla(207, 41%, 27%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(205, 46%, 10%, 1) 0%,
-    hsla(191, 28%, 23%, 1) 50%,
-    hsla(207, 41%, 27%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(205, 46%, 10%, 1) 0%,
-    hsla(191, 28%, 23%, 1) 50%,
-    hsla(207, 41%, 27%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1 );
+  background-image: linear-gradient(to right, #102039, #2a1454, #2a1454);
 }
 .banner-image {
   z-index: 1;
-  border: 2px solid blue;
+  border: 3px solid #2a1454;
   border-radius: 40px;
   rotate: 8deg;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
 }
 .banner-image:hover {
-  animation-delay: 1s;
-  animation-duration: 1;
+  border: 3px solid #8750F7;
+  animation-delay: 0.2s;
+  animation-duration: .1;
   transform: rotate(-8deg);
 }
+
+.gradient-text {
+  background-image: linear-gradient(to right, #8750F7, #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
 
 .background-text {
   font-size: 16vw;
   /* font-family: "Rubik Doodle Shadow", system-ui; */
-  -webkit-text-stroke: 0.2vh blue;
-  font-weight: 400;
+  -webkit-text-stroke: 0.3vh #8750F7;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
   font-style: normal;
   z-index: 0;
   position: absolute;
-  left: 42%;
-  top: 35%;
+  left: 38%;
+  top: 30%;
   opacity: 0.3;
   /* color: blue; */
   animation-name: text-animation;
@@ -56,12 +44,12 @@
 
 @keyframes text-animation {
   0% {
-    font-size: 240px;
+    font-size: 19rem;
   }
   50% {
-    font-size: 220px;
+    font-size: 18rem;
   }
   100% {
-    font-size: 240px;
+    font-size: 19rem;
   }
 }

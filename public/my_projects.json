@@ -3,6 +3,7 @@
     "id": 1,
     "category": "web_development",
     "projectName": "Chef Squad",
+    "technologies": ["React", "React Router", "Firebase", "MongoDB", "Nodejs", "Expressjs", "Tailwind CSS", "Daisy UI", "Crypto", "React PDF"],
     "imageURL": "/../src/assets/project_1.png",
     "link": "https://assignment-10-frontend.web.app/"
   },
@@ -10,6 +11,7 @@
     "id": 2,
     "category": "web_development",
     "projectName": "Marvel",
+    "technologies": ["React", "React Router", "Firebase", "MongoDB", "Nodejs", "Expressjs", "Tailwind CSS", "Daisy UI", "Crypto"],
     "imageURL": "/../src/assets/project_2.png",
     "link": "https://assignment-11-client-3fe02.web.app/"
   },
@@ -17,6 +19,7 @@
     "id": 3,
     "category": "web_development",
     "projectName": "Chakri",
+    "technologies": ["React", "React Router", "MongoDB", "Nodejs", "Expressjs", "Tailwind CSS", "Daisy UI"],
     "imageURL": "/../src/assets/project_3.png",
     "link": "https://funny-unicorn-6bb02e.netlify.app/"
   },
@@ -25,6 +28,7 @@
     "category": "ui_design",
     "projectName": "Money Management",
     "imageURL": "/../src/assets/UI_1.png",
+    "technologies": ["Figma"],
     "link": "https://funny-unicorn-6bb02e.netlify.app/"
   },
   {
@@ -32,6 +36,7 @@
     "category": "ui_design",
     "projectName": "Restaurant Website",
     "imageURL": "/../src/assets/UI_2.png",
+    "technologies": ["Figma"],
     "link": "https://funny-unicorn-6bb02e.netlify.app/"
   },
   {
@@ -39,6 +44,7 @@
     "category": "ui_design",
     "projectName": "Easy Booking",
     "imageURL": "/../src/assets/UI_3.png",
+    "technologies": ["Figma"],
     "link": "https://funny-unicorn-6bb02e.netlify.app/"
   },
   {
@@ -46,6 +52,7 @@
     "category": "ui_design",
     "projectName": "Paciyfy.gg",
     "imageURL": "/../src/assets/UI_4.png",
+    "technologies": ["Figma"],
     "link": "https://funny-unicorn-6bb02e.netlify.app/"
   }
 ]
