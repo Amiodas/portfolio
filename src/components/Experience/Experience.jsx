@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <div className='container grid grid-cols-2 gap-5 min-h-screen mx-auto'>
+        <div className='container grid grid-cols-2 gap-5 min-h-screen mx-auto my-16 py-16'>
             <div className=''>
                 <h1 className='text-5xl font-bold mb-8'>My Experience</h1>
                 <div className='card border p-5 space-y-2'>

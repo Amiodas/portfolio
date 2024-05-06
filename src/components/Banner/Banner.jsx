@@ -5,41 +5,57 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import image from "../../assets/me.png";
 import "./Banner.css";
 
 const Banner = () => {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Check if count has reached 100
+      if (count < 100) {
+        setCount((prevCount) => prevCount + 1);
+      } else {
+        clearInterval(intervalId); // Stop the interval when count reaches 100
+      }
+    }, 30);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(intervalId);
+  }, [count]);
   return (
-    <div className="banner-background pt-12">
+    <div className="banner-background background-image pt-12">
       <div className="container min-h-screen mx-auto grid grid-cols-2">
         <div className="flex items-center">
           <div className="">
-            <h1 className="text-5xl font-bold mb-5">I am Amio</h1>
+            <h1 className="text-4xl font-bold mb-5">I am Amio</h1>
             <div className="text-7xl font-bold gradient-text">
               <p className="mb-5">Web Developer +</p>
               <p className="">UX Designer</p>
             </div>
             <p className="py-6 text-2xl">
-              I break down complex user experinece problems to create integritiy
-              focussed solutions that connect billions of people
+              I break down complex user experinece problems to <br /> create
+              integritiy focussed solutions that connect <br /> billions of
+              people
             </p>
-            <div className="flex items-center">
-              <button className="btn bg-teal-500 rounded-full text-black hover:text-teal-500">
+            <div className="flex items-center mt-5">
+              <button className="download-btn">
                 Download CV
-                <FontAwesomeIcon icon={faDownload} />
+                <FontAwesomeIcon className="ms-2" icon={faDownload} />
               </button>
-              <div className="mx-8 space-x-3">
-                <button className="btn btn-circle btn-outline btn-sm">
+
+              <ul className="mx-8">
+                <li className="social-link">
                   <FontAwesomeIcon icon={faTwitter} />
-                </button>
-                <button className="btn btn-circle btn-outline btn-sm">
+                </li>
+                <li className="social-link">
                   <FontAwesomeIcon icon={faLinkedin} />
-                </button>
-                <button className="btn btn-circle btn-outline btn-sm">
+                </li>
+                <li className="social-link">
                   <FontAwesomeIcon icon={faGithub} />
-                </button>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -51,35 +67,34 @@ const Banner = () => {
         <p>HI</p>
       </div>
       <div className="container flex justify-between mx-auto pb-16">
-      <div className="flex">
+        <div className="flex">
+          <h1 className="text-6xl font-bold">{count}+</h1>
+          <div className="text-xl">
+            <p>Years of</p>
+            <p>Experience</p>
+          </div>
+        </div>
+        <div className="flex">
           <h1 className="text-6xl font-bold">3+</h1>
           <div className="text-xl">
             <p>Years of</p>
             <p>Experience</p>
           </div>
         </div>
-      <div className="flex">
+        <div className="flex">
           <h1 className="text-6xl font-bold">3+</h1>
           <div className="text-xl">
             <p>Years of</p>
             <p>Experience</p>
           </div>
         </div>
-      <div className="flex">
+        <div className="flex">
           <h1 className="text-6xl font-bold">3+</h1>
           <div className="text-xl">
             <p>Years of</p>
             <p>Experience</p>
           </div>
         </div>
-      <div className="flex">
-          <h1 className="text-6xl font-bold">3+</h1>
-          <div className="text-xl">
-            <p>Years of</p>
-            <p>Experience</p>
-          </div>
-        </div>
-        
       </div>
     </div>
   );

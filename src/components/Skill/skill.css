@@ -1,11 +1,31 @@
-.skill-image {
-    height: 100px;
-    width: 80px;
-}
-
 .skill {
-    filter: grayscale(1);
+  /* From https://css.glass */
+  background: #140c1c;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 0.3s ease-in;
+  padding: 30px 30px;
 }
 .skill:hover {
-    filter: grayscale(0);
+  filter: grayscale(0);
+  background-color: #2a1454;
+  outline: 1px solid #8750f7;
+}
+.skill-image {
+  height: 80px;
+  width: 60px;
+  transition: 0.3s ease;
+  /* filter: grayscale(1); */
+}
+.skill:hover .skill-image {
+  transform: scale(1.1);
+}
+
+.skill-percentage {
+  transition: 0.2s;
+}
+.skill:hover .skill-percentage {
+  color: #8750f7;
 }

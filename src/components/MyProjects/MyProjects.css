@@ -1,0 +1,115 @@
+.my-project-card {
+  position: relative;
+  /* width: 100%;  */
+}
+
+.my-project-card-thumbnail {
+  height: 350px;
+}
+
+.my-project-card-detail-btn {
+  background: var(--tj-theme-primary);
+  background: -o-linear-gradient(
+    190deg,
+    var(--tj-theme-secondary) 0%,
+    var(--tj-theme-primary) 100%
+  );
+  background: linear-gradient(
+    260deg,
+    var(--tj-theme-secondary) 0%,
+    var(--tj-theme-primary) 100%
+  );
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0px 20px;
+  display: none;
+  text-align: center;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  width: 30rem;
+}
+
+.my-project-card:hover .my-project-card-detail-btn {
+  position: absolute;
+  transition: 0.5s ease;
+  bottom: 20px;
+  display: block;
+}
+
+.my-project-card:hover .my-project-card-detail-btn .detail-btn-icon {
+  animation: rotate-detail-btn backwards 0.3s;
+}
+
+.detail-btn-icon {
+  transform: rotate(-45deg);
+}
+
+@keyframes rotate-detail-btn {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+.show-all-project-btn {
+  padding: 15px 30px;
+  color: white;
+  border-radius: 30px;
+  background: var(--tj-theme-primary);
+  background: -o-linear-gradient(
+    190deg,
+    var(--tj-theme-secondary) 0%,
+    var(--tj-theme-primary) 100%
+  );
+  background: linear-gradient(
+    260deg,
+    var(--tj-theme-secondary) 0%,
+    var(--tj-theme-primary) 100%
+  );
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  background-color: #050709;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.list label {
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  line-height: 40px;
+  padding-left: 15px;
+  color: #333;
+}
+
+.list .indicator {
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  left: 0;
+  padding: 10px 30px;
+  background: var(--tj-theme-primary);
+  background: -o-linear-gradient(
+    190deg,
+    var(--tj-theme-secondary) 0%,
+    var(--tj-theme-primary) 100%
+  );
+  background: linear-gradient(
+    260deg,
+    var(--tj-theme-secondary) 0%,
+    var(--tj-theme-primary) 100%
+  );
+  color: white;
+  border-radius: 30px;
+}

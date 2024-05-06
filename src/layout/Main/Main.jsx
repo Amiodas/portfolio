@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div>
       <Navbar />
-      <div className="mx-auto">
+      <div className="mx-auto bg-[#050709]">
         <Outlet />
       </div>
       <Footer />

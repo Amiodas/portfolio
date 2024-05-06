@@ -1,3 +1,16 @@
+.qualities {
+  border-bottom: 0.5px dashed #8750f7;
+  transition: 0.5s ease-out;
+}
+
 .qualities:hover {
-    background-color: #8750F7;
+  background-color: #8750f7;
+}
+
+.quality-title {
+  margin-left: 0;
+}
+
+.index {
+  color: #8750f7;
 }
