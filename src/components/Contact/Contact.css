@@ -4,6 +4,13 @@
   color: transparent;
 }
 
+.custom-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #8750f7;
+  border-radius: 2px;
+}
+
 ul li {
   list-style: none;
   float: left;
@@ -44,12 +51,8 @@ ul li:before {
 }
 
 .form-container {
-    background: #140c1c;
-    padding: 30px 40px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+  background: #140c1c;
+  padding: 30px 40px;
+  width: 100%;
+  border-radius: 20px;
 }

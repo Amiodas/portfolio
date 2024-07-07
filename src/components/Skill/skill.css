@@ -5,22 +5,23 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
   padding: 30px 30px;
 }
 .skill:hover {
-  filter: grayscale(0);
   background-color: #2a1454;
   outline: 1px solid #8750f7;
+  transition: .3s;
 }
 .skill-image {
   height: 80px;
   width: 60px;
   transition: 0.3s ease;
-  /* filter: grayscale(1); */
+  filter: grayscale(1);
 }
 .skill:hover .skill-image {
   transform: scale(1.1);
+  filter: grayscale(0);
 }
 
 .skill-percentage {

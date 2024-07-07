@@ -19,7 +19,7 @@
 .nav-link:hover .seleted-nav-link{
   height: 2px;
   width: 100%;
-  transform: scale(1);
+  transform: scale(1.1);
   background: var(--tj-theme-primary);
   background: -o-linear-gradient(
     190deg,

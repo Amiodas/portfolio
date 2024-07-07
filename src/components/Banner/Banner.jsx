@@ -40,10 +40,12 @@ const Banner = () => {
               people
             </p>
             <div className="flex items-center mt-5">
+              <a href="../../../public/CV Amio Das.pdf" download={`CV Amio Das.pdf`}>
               <button className="download-btn">
                 Download CV
                 <FontAwesomeIcon className="ms-2" icon={faDownload} />
               </button>
+              </a>
 
               <ul className="mx-8">
                 <li className="social-link">

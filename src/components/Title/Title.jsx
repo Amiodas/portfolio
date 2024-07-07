@@ -6,7 +6,7 @@ const Title = ({title, description}) => {
         <div className='mb-5'>
             <div className='text-center'>
                 <h2 className="text-6xl font-bold gradient-text mb-3">{title}</h2>
-                <p className='text-xl'>{description}</p>
+                <p className='text-xl wrapbox'>{description}</p>
             </div>
         </div>
     );

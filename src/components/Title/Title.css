@@ -1,0 +1,8 @@
+.wrapbox {
+    width: 10em;
+  margin: 0.5em;
+  white-space: normal;
+  vertical-align: top;
+  display: inline-block;
+  word-break: break-all;
+}
