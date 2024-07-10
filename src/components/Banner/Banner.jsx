@@ -40,22 +40,34 @@ const Banner = () => {
               people
             </p>
             <div className="flex items-center mt-5">
-              <a href="../../../public/CV Amio Das.pdf" download={`CV Amio Das.pdf`}>
-              <button className="download-btn">
-                Download CV
-                <FontAwesomeIcon className="ms-2" icon={faDownload} />
-              </button>
+              <a
+                href="../../../public/CV Amio Das.pdf"
+                download={`CV Amio Das.pdf`}
+              >
+                <button className="download-btn">
+                  Download CV
+                  <FontAwesomeIcon className="ms-2" icon={faDownload} />
+                </button>
               </a>
 
               <ul className="mx-8">
                 <li className="social-link">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <a href="#">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
                 </li>
                 <li className="social-link">
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <a
+                    target={`_blank`}
+                    href="https://www.linkedin.com/in/amio-das-8a420a191/"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
                 </li>
                 <li className="social-link">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <a target={`_blank`} href="https://github.com/Amiodas">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </li>
               </ul>
             </div>

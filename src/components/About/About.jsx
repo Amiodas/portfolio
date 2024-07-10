@@ -2,14 +2,14 @@ import React from "react";
 import Title from "../Title/Title";
 import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const title = "My Quality Service";
   const description =
     "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.";
   return (
-    <div className="container min-h-screen flex justify-center items-center mx-auto my-16">
+    <div id="services" className="container min-h-screen flex justify-center items-center mx-auto my-16">
       <div>
         <Title title={title} description={description} />
         <div className="mt-8">
@@ -57,6 +57,14 @@ const About = () => {
           </div>
       
         </div>
+      </div>
+      <div className="fixed bottom-12 right-12">
+        <a href="#">
+          <FontAwesomeIcon
+            className="btn btn-circle home-btn font-light btn-xs rounded-full p-4"
+            icon={faArrowUp}
+          />
+        </a>
       </div>
     </div>
   );

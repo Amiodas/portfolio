@@ -80,6 +80,7 @@
   background-color: #050709;
   border-radius: 30px;
   padding: 3px;
+  width: 400px;
 }
 
 .list label {
@@ -112,4 +113,9 @@
   );
   color: white;
   border-radius: 30px;
+  /* z-index: -1; */
+}
+
+.all-category:focus {     
+  background-color:yellow;    
 }

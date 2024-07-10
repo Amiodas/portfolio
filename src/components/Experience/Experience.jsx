@@ -1,12 +1,13 @@
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap, faUserGear } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Experience = () => {
   return (
-    <div className="container grid grid-cols-2 gap-16 min-h-screen mx-auto my-16 py-16">
+    <div id="experiences" className="container grid grid-cols-2 gap-16 min-h-screen mx-auto my-16 py-16">
       <div className="space-y-6">
         <h1 className="text-5xl font-bold mb-12 space-x-4">
+          <FontAwesomeIcon className="text-[#8750f7]" icon={faUserGear} />
           <span className="gradient-text">My Experience</span>
         </h1>
         <div className="card bg-[#140c1c] p-5 space-y-2">

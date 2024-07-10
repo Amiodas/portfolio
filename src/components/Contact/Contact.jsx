@@ -8,7 +8,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   return (
     <div className="py-16">
-      <div className="container min-h-screen hero mx-auto">
+      <div id="contact" className="container min-h-screen hero mx-auto">
         <div className="grid grid-cols-2 gap-16 items-center">
           <div className="">
             <div className="mb-3">

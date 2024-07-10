@@ -10,10 +10,20 @@ const MyProjects = () => {
   const [myProjects, setMyProjects] = useState([]);
   const [displayProjects, setDisplayProjects] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const title = "My Recent Works";
   const description =
     "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.";
-
+  const categories = [
+    {
+      id: "web_development",
+      categoryName: "Web Development",
+    },
+    {
+      id: "ui_design",
+      categoryName: "UI/UX",
+    },
+  ];
   useEffect(() => {
     fetch("my_projects.json")
       .then((res) => res.json())
@@ -25,40 +35,48 @@ const MyProjects = () => {
     setDisplayProjects(slicedData);
   }, [myProjects]);
 
+  useEffect(() => {}, []);
+
   const handleShowAllData = () => {
     setLoading(true);
     setDisplayProjects(myProjects);
     setLoading(false);
   };
+  const handleSelectCategory = (category) => {
+    setSelectedCategory(category);
+    const matchedCategory = myProjects.filter(
+      (project) => project.category === category
+    );
+    setDisplayProjects(matchedCategory);
+    console.log(displayProjects);
+  };
   return (
     <div className="bg-[#0f0715] py-16">
       <div className="container hero min-h-screen mx-auto py-16">
-        <div className="hero-content text-center">
+        <div id="projects" className="hero-content text-center">
           {/* <img src={image} alt="" /> */}
           <div className="">
             <Title title={title} description={description} />
 
             {/* Custom button */}
-            <div>
-              <div className="list my-10">
-                <label className="all-category">
-                  <span className="category">All</span>
-                </label>
-                <label className="web-category">
-                  <span className="category">Web Development</span>
-                </label>
-                <label className="design-category">
-                  <span className="category">UI/UX</span>
-                </label>
-                <div className="indicator"></div>
-              </div>
 
-              {/* <div className="bg-[#050709] space-x-5 rounded-full inline-block p-2">
-                <button className="category-btn rounded-full">All</button>
-                <button className="">Web Development</button>
-                <button className="">UI/UX</button>
-              </div> */}
+            <div className="flex justify-center gap-5 my-10">
+            <button onClick={handleShowAllData} className="custom-btn font-semibold rounded-full">
+              All
+            </button>
+              {categories.map((category, index) => (
+                <div key={index}>
+                  <button
+                    className={`${selectedCategory} custom-btn font-semibold rounded-full`}
+                    onClick={() => handleSelectCategory(category.id)}
+                  >
+                    {category.categoryName}
+                  </button>
+                </div>
+              ))}
             </div>
+
+            {/* </div> */}
             <div>
               {loading === false ? (
                 <div className="grid grid-cols-2 gap-10">
@@ -67,7 +85,7 @@ const MyProjects = () => {
                       key={project.id}
                       className="card bg-[#140c1c] my-project-card"
                     >
-                      <div className="card-body px-10 pt-10">
+                      <div className="card-body px-10 pt-10 pb-16">
                         <div className="h-80">
                           <img
                             className="my-project-card-thumbnail inline"
@@ -106,7 +124,10 @@ const MyProjects = () => {
               )}
             </div>
             <div className="mt-16 mb-5">
-              <button className="show-all-project-btn" onClick={handleShowAllData}>
+              <button
+                className="show-all-project-btn"
+                onClick={handleShowAllData}
+              >
                 Show All Projects
                 <FontAwesomeIcon className="ms-3" icon={faArrowDown} />
               </button>

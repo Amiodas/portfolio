@@ -19,7 +19,7 @@ const Skill = () => {
   return (
     <div className="bg-[#0f0715] py-16">
       <div className="container hero min-h-screen py-16 mx-auto">
-        <div className="hero-content text-center">
+        <div id="skills" className="hero-content text-center">
           <div className="">
             <Title title={title} description={description} />
             <div className="grid grid-cols-6 gap-8 mx-auto my-10">
