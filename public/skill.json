@@ -2,7 +2,8 @@
   {
     "skillId": 1,
     "skillName": "HTML 5",
-    "icon": "/../src/assets/icons/html.png"
+    "icon": "/../src/assets/icons/html.png",
+    "title": "html"
   },
   {
     "skillId": 2,

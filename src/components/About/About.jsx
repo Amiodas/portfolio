@@ -9,13 +9,20 @@ const About = () => {
   const description =
     "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.";
   return (
-    <div id="services" className="container min-h-screen flex justify-center items-center mx-auto my-16">
+    <div
+      id="services"
+      className="container min-h-screen flex justify-center items-center mx-auto my-16"
+    >
       <div>
-        <Title title={title} description={description} />
-        <div className="mt-8">
+        <div data-aos="fade-right" data-aos-delay="200">
+          <Title title={title} description={description} />
+        </div>
+        <div className="mt-8" data-aos="fade-up" data-aos-delay="400"> 
           <div className="qualities grid grid-cols-4 items-center justify-items-center gap-16 p-5">
             <h3 className="text-3xl font-bold">01</h3>
-            <h2 className="text-3xl font-bold text-white quality-title">Web Development</h2>
+            <h2 className="text-3xl font-bold text-white quality-title">
+              Web Development
+            </h2>
             <p className="text-white">
               I break down complex user experience problems to create intigrity
               focussed solutions that connect thousands of people
@@ -29,7 +36,9 @@ const About = () => {
           </div>
           <div className="qualities grid grid-cols-4 items-center justify-items-center gap-16 p-5">
             <h3 className="text-3xl font-bold">02</h3>
-            <h2 className="text-3xl font-bold text-white quality-title">UI/UX Design</h2>
+            <h2 className="text-3xl font-bold text-white quality-title">
+              UI/UX Design
+            </h2>
             <p className="text-white">
               I break down complex user experience problems to create intigrity
               focussed solutions that connect thousands of people
@@ -43,7 +52,9 @@ const About = () => {
           </div>
           <div className="qualities grid grid-cols-4 items-center justify-items-center gap-16 p-5">
             <h3 className="text-3xl font-bold">03</h3>
-            <h2 className="text-3xl font-bold text-white quality-title">Devops</h2>
+            <h2 className="text-3xl font-bold text-white quality-title">
+              Devops
+            </h2>
             <p className="text-white">
               I break down complex user experience problems to create intigrity
               focussed solutions that connect thousands of people
@@ -55,7 +66,6 @@ const About = () => {
               />
             </div>
           </div>
-      
         </div>
       </div>
       <div className="fixed bottom-12 right-12">

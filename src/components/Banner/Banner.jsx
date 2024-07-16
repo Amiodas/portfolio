@@ -27,7 +27,7 @@ const Banner = () => {
   return (
     <div className="banner-background background-image pt-12">
       <div className="container min-h-screen mx-auto grid grid-cols-2">
-        <div className="flex items-center">
+        <div className="flex items-center" data-aos="fade-right" data-aos-delay="400">
           <div className="">
             <h1 className="text-4xl font-bold mb-5">I am Amio</h1>
             <div className="text-7xl font-bold gradient-text">
@@ -73,7 +73,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="400">
           <img className="banner-image" src={image} alt="" />
         </div>
       </div>

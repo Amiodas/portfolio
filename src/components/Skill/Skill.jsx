@@ -24,7 +24,11 @@ const Skill = () => {
             <Title title={title} description={description} />
             <div className="grid grid-cols-6 gap-8 mx-auto my-10">
               {skills.map((skill) => (
-                <div key={skill.skillName}>
+                <div
+                  key={skill.skillName}
+                  className="lg:tooltip"
+                  data-tip={skill?.title}
+                >
                   <div className="skill flex justify-center items-center">
                     <div className="mx-auto">
                       <img

@@ -1,0 +1,14 @@
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(to right, #140c1c, #050709, #140c1c, #140c1c);
+}
+.wave > h2 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+}

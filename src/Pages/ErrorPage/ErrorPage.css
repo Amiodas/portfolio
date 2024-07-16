@@ -1,0 +1,7 @@
+.text {
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('./images/ErrorPage/Error.jpg');
+	color: transparent;
+    object-fit: cover;
+}
