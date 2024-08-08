@@ -17,64 +17,59 @@
   },
   {
     "skillId": 4,
+    "skillName": "TypeScript",
+    "icon": "/../src/assets/icons/typescript.png"
+  },
+  {
+    "skillId": 5,
     "skillName": "Tailwind",
     "icon": "/../src/assets/icons/tailwind.png"
   },
-  { "skillId": 5, "skillName": "Vue", "icon": "/../src/assets/icons/vue.png" },
+  { "skillId": 6, "skillName": "Vue", "icon": "/../src/assets/icons/vue.png" },
   {
-    "skillId": 6,
+    "skillId": 7,
     "skillName": "Nuxtjs",
     "icon": "/../src/assets/icons/nuxtjs.png"
   },
   {
-    "skillId": 7,
+    "skillId": 8,
     "skillName": "React",
     "icon": "/../src/assets/icons/react.png"
   },
   {
-    "skillId": 8,
+    "skillId": 9,
+    "skillName": "Next Js",
+    "icon": "/../src/assets/icons/nextjs.png"
+  },
+  {
+    "skillId": 10,
     "skillName": "Redux",
     "icon": "/../src/assets/icons/redux.png"
   },
   {
-    "skillId": 9,
+    "skillId": 11,
     "skillName": "Nodejs",
     "icon": "/../src/assets/icons/nodejs.png"
   },
   {
-    "skillId": 10,
+    "skillId": 12,
     "skillName": "Expressjs",
     "icon": "/../src/assets/icons/express.png"
   },
   {
-    "skillId": 11,
+    "skillId": 13,
     "skillName": "Firebase",
     "icon": "/../src/assets/icons/firebase.png"
   },
   {
-    "skillId": 12,
+    "skillId": 14,
     "skillName": "Graphql",
     "icon": "/../src/assets/icons/graphql.png"
-  },
-  {
-    "skillId": 13,
-    "skillName": "Prisma",
-    "icon": "/../src/assets/icons/prisma.png"
-  },
-  {
-    "skillId": 14,
-    "skillName": "Redis",
-    "icon": "/../src/assets/icons/redis.png"
   },
   { "skillId": 15, "skillName": "Git", "icon": "/../src/assets/icons/git.png" },
   {
     "skillId": 16,
-    "skillName": "Netlify",
-    "icon": "/../src/assets/icons/netlify.png"
-  },
-  {
-    "skillId": 17,
     "skillName": "Figma",
     "icon": "/../src/assets/icons/figma.png"
   }
-] 
+]

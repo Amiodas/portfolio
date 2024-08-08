@@ -21,13 +21,17 @@ const Skill = () => {
       <div className="container hero min-h-screen py-16 mx-auto">
         <div id="skills" className="hero-content text-center">
           <div className="">
-            <Title title={title} description={description} />
+            <div data-aos="fade-right" data-aos-delay="400">
+              <Title title={title} description={description} />
+            </div>
             <div className="grid grid-cols-6 gap-8 mx-auto my-10">
               {skills.map((skill) => (
                 <div
                   key={skill.skillName}
-                  className="lg:tooltip"
+                  className="tooltip tooltip-primary"
                   data-tip={skill?.title}
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
                 >
                   <div className="skill flex justify-center items-center">
                     <div className="mx-auto">

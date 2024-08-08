@@ -13,7 +13,7 @@ const MyProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const title = "My Recent Works";
   const description =
-    "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.";
+    "My most recent works, last but not least to show. Something cooking, coming soon.";
   const categories = [
     {
       id: "web_development",
@@ -56,14 +56,19 @@ const MyProjects = () => {
         <div id="projects" className="hero-content text-center">
           {/* <img src={image} alt="" /> */}
           <div className="">
-            <Title title={title} description={description} />
+            <div data-aos="fade-right" data-aos-delay="400">
+              <Title title={title} description={description} />
+            </div>
 
             {/* Custom button */}
 
-            <div className="flex justify-center gap-5 my-10">
-            <button onClick={handleShowAllData} className="custom-btn font-semibold rounded-full">
-              All
-            </button>
+            <div className="flex justify-center gap-5 my-10" data-aos="fade-up" data-aos-delay="400">
+              <button
+                onClick={handleShowAllData}
+                className="custom-btn font-semibold rounded-full"
+              >
+                All
+              </button>
               {categories.map((category, index) => (
                 <div key={index}>
                   <button
@@ -79,7 +84,7 @@ const MyProjects = () => {
             {/* </div> */}
             <div>
               {loading === false ? (
-                <div className="grid grid-cols-2 gap-10">
+                <div className="grid grid-cols-2 gap-10" data-aos="zoom-in-left" data-aos-delay="600">
                   {displayProjects?.map((project) => (
                     <div
                       key={project.id}

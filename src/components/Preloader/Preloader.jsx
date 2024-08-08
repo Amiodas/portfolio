@@ -7,27 +7,28 @@ const Preloader = () => {
 
   useEffect(() => {
     anime({
-      targets: '.line-drawing-demo .lines path',
+      targets: ".line-drawing-demo .lines path",
       strokeDashoffset: [anime.setDashoffset, 0],
-      easing: 'easeInOutSine',
+      easing: "easeInOutSine",
       duration: 1500,
-      delay: function(el, i) { return i * 250 },
-      direction: 'alternate',
-      loop: true
+      delay: function (el, i) {
+        return i * 250;
+      },
+      direction: "alternate",
+      loop: true,
     });
   }, []);
 
   return (
     <div className="preloader">
-      <div
-        ref={animatedElement}
-      >
+      <div ref={animatedElement}>
         {/* Animate Me! */}
-      </div>
-      <div className="dot-container">
-        <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="dot"></div>
+
+        <div className="dot-container mb-3 ml-3">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
       </div>
       {/* <p>Loading...</p> */}
     </div>
